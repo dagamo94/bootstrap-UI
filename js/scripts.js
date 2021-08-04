@@ -47,7 +47,7 @@ function displayImages(arr, colNum) {
     }
 }
 
-// displayImages(imagesArray, 4);
+displayImages(imagesArray, 4);
 
 // DYNAMIC SCROLLING
 
