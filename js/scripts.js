@@ -51,65 +51,65 @@ displayImages(imagesArray, 4);
 
 // DYNAMIC SCROLLING
 
-$("#about-btn").click(function (event) {
-    event.preventDefault();
+// $("#about-btn").click(function (event) {
+//     event.preventDefault();
 
-    window.scroll({
-        top: 2500,
-        left: 0,
-        behavior: 'smooth'
-    });
+//     window.scroll({
+//         top: 2500,
+//         left: 0,
+//         behavior: 'smooth'
+//     });
 
-    window.scrollBy({
-        top: 100,
-        left: 0,
-        behavior: 'smooth'
-    })
+//     window.scrollBy({
+//         top: 100,
+//         left: 0,
+//         behavior: 'smooth'
+//     })
 
-    document.querySelector('#jabout').scrollIntoView({
-        behavior: 'smooth'
-    });
-})
+//     document.querySelector('#jabout').scrollIntoView({
+//         behavior: 'smooth'
+//     });
+// })
 
-$("#home-btn").click(function (event) {
-    event.preventDefault();
+// $("#home-btn").click(function (event) {
+//     event.preventDefault();
 
-    window.scroll({
-        top: 2500,
-        left: 0,
-        behavior: 'smooth'
-    });
+//     window.scroll({
+//         top: 2500,
+//         left: 0,
+//         behavior: 'smooth'
+//     });
 
-    window.scrollBy({
-        top: 100,
-        left: 0,
-        behavior: 'smooth'
-    })
+//     window.scrollBy({
+//         top: 100,
+//         left: 0,
+//         behavior: 'smooth'
+//     })
 
-    document.querySelector('#fotos').scrollIntoView({
-        behavior: 'smooth'
-    });
-})
+//     document.querySelector('#jabout').scrollIntoView({
+//         behavior: 'smooth'
+//     });
+// })
 
-$("#projects-btn").click(function (event) {
-    event.preventDefault();
+// $("#projects-btn").click(function (event) {
+//     event.preventDefault();
 
-    window.scroll({
-        top: 2500,
-        left: 0,
-        behavior: 'smooth'
-    });
+//     window.scroll({
+//         top: 2500,
+//         left: 0,
+//         behavior: 'smooth'
+//     });
 
-    window.scrollBy({
-        top: 100,
-        left: 0,
-        behavior: 'smooth'
-    })
+//     window.scrollBy({
+//         top: 100,
+//         left: 0,
+//         behavior: 'smooth'
+//     })
 
-    document.querySelector('#projects').scrollIntoView({
-        behavior: 'smooth'
-    });
-})
+//     document.querySelector('#projects').scrollIntoView({
+//         behavior: 'smooth'
+//     });
+// })
 
 $(".img").click(function () {
     alert("click");
