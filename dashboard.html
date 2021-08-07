@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">  -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" /> -->
+
+    <!-- <script src="https://kit.fontawesome.com/a7db5df4d1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/styles.css" /> -->
+
+
+    <!-- build:css css/main.css -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- endbuild -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+    <title>Photo Portfolio</title>
+</head>
+
+<body>
+
+    <!-- 8888888888888 NAVBAR V1.0 0000000000000 -->
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light display-4 sticky-top">
+        <div class="container scroll">
+
+            <a class="navbar-brand" href="index.html" id="unsplashClone">Unsplash Clone</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link scroll" href="#top" id="home-btn">home <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link scroll" href="#jabout" id="about-btn">about</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            collections
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="portraits.html">portraits</a>
+                            <a class="dropdown-item" href="mountains.html">mountains</a>
+                            <a class="dropdown-item" href="urban.html">urban</a>
+                            <a class="dropdown-item" href="commercial.html">commercial/product</a>
+                            <a class="dropdown-item" href="misc.html">misc</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav> -->
+
+    <!-- 00000000000000000 NAVBAR V2.0 0000000000000000000 -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light display-4 sticky-top">
+        <div class="container-fluid scroll">
+
+            <a class="navbar-brand" href="#">Unsplash Clone</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                    <li class="nav-item">
+                        <a class="nav-link active scroll" aria-current="page" href="#bottom" id="home-btn">Brands</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link scroll" href="#jabout" id="about-btn">Blog</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <svg width="18" height="18" viewBox="0 0 32 32" version="1.1" aria-hidden="false">
+                                <path
+                                    d="M7 15.5c0 1.9-1.6 3.5-3.5 3.5s-3.5-1.6-3.5-3.5 1.6-3.5 3.5-3.5 3.5 1.6 3.5 3.5zm21.5-3.5c-1.9 0-3.5 1.6-3.5 3.5s1.6 3.5 3.5 3.5 3.5-1.6 3.5-3.5-1.6-3.5-3.5-3.5zm-12.5 0c-1.9 0-3.5 1.6-3.5 3.5s1.6 3.5 3.5 3.5 3.5-1.6 3.5-3.5-1.6-3.5-3.5-3.5z">
+                                </path>
+                            </svg>
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" id="dropdown-nav">
+                            <a class="dropdown-item" href="portraits.html">Topics</a>
+                            <a class="dropdown-item" href="mountains.html">Collections</a>
+                            <a class="dropdown-item" href="urban.html">Community</a>
+                            <a class="dropdown-item" href="commercial.html">History</a>
+                            <a class="dropdown-item" href="misc.html">Made with Unsplash</a>
+                            <a class="dropdown-item" href="misc.html">API/Developers</a>
+                            <a class="dropdown-item" href="misc.html">Official Apps</a>
+                            <a class="dropdown-item-icon" href="misc.html">IG</a>
+                            <a class="dropdown-item-icon" href="misc.html">FB</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-light" href="#" tabindex="-1" aria-disabled="true">Submit a photo</a>
+                    </li>
+                    <li class="nav-item">
+                        <button role="button" tabindex="0" aria-haspopup="true" aria-expanded="false" type="button"
+                            class="_1aYva _3d86A" style="height:100%"><svg width="24" height="24" viewBox="0 0 32 32"
+                                version="1.1" aria-hidden="false">
+                                <path
+                                    d="M19.1263 28.2c-6.1826 2.1388-11.82761 1.2031-13.03726-2.4062-.40321-1.3368-.26881-2.6735.53762-4.144.40322-.6684.40322-1.7378.13441-2.5398l-.94084-3.0746c-.80643-2.1388-.53762-4.4113.26881-6.28281C6.62666 8.28215 7.5675 7.21273 8.91155 6.277l-.26881-.80206c-.40322-.80206.1344-1.87148.94083-2.13883l1.61283-.53471c.9409-.40103 1.8817.13368 2.1505 1.06942l.2688.80206c1.7473-.13368 3.3601.26735 4.8386 1.20309 1.6129 1.06941 2.8225 2.53985 3.4945 4.54503l1.0753 3.3419c.2688.6684.9408 1.6041 1.7472 1.8715 1.4785.5347 2.5537 1.4704 2.9569 2.8072 1.3441 3.3419-2.4193 7.6195-8.601 9 9.7584zm6.0482-8.9564c-.5376-1.4704-4.3009-2.2725-9.4083-.5347s-7.52668 4.8124-6.98906 6.2828c.53762 1.4705 4.30096 2.2725 9.40836.5347s7.5267-4.8123 6.989-6.2828zm-10.0803 5.4808c-1.3441 0-2.4193-.6684-3.2257-1.6041-.1345-.1337-.1345-.4011 0-.5348.9408-.802 2.2848-1.6041 4.4353-2.4061.8064-.2674 1.6129-.5347 2.4193-.6684.2688 0 .4032.1337.4032.2673v.6684c0 1.6041-.9408 3.0746-2.2849 3.743.1344 0-.9408.5347-1.7472.5347z">
+                                </path>
+                            </svg><span style="width:11px;height:11px" class="_12P2z _1WBCm"></span></button>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-brand" href="dashboard.html">
+                            <img src="/img/profile-1567187883783-848b7c0c1b44image.jfif" alt="" width="30" height="24"
+                                id="profile-nav">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ======================================= CATEGORY NAV BAR =========================================== -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light display-4 sticky-top">
+        <div class="container-fluid scroll">
+
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active scroll" aria-current="page" href="#bottom" id="home-btn">Brands</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link scroll" href="#jabout" id="about-btn">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-light" href="#" tabindex="-1" aria-disabled="true">Submit a photo</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ================ FLUID CONTAINER ENCAPSULATING JUMBOTRON WITH ABOUT INFO ======================= -->
+    <div class="container-fluid">
+        <div class="row" id="jabout">
+            <div class="col-md myproperties">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+
+                            <div class="jumbotron bg-white d-block w-100 jright">
+                                <h1 class="display-4">Unsplash clone</h1>
+                                <!-- <img class="svg mephoto float-left" src="img/yo.jpg" alt="me"> -->
+                                <p class="lead">
+                                    This is a simple hero unit, a simple jumbotron-style component for
+                                    calling extra attention to featured content or information.
+                                </p>
+                                <hr class="my-4">
+                                <p><a href="https://www.instagram.com/dan.grcia/?hl=en" target="_blank"><i
+                                            class="fab fa-instagram"></a></i> IG</p>
+                            </div>
+                            <!-- <img class="d-block w-100"
+                                    src="https://images.unsplash.com/photo-1496016943515-7d33598c11e6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1300&q=80"
+                                    alt="First slide">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Image Title</h5>
+                                    <p>Description</p>
+                                </div> -->
+                        </div>
+                        <div class="carousel-item">
+                            <div class="jumbotron bg-white jright">
+                                <h1 class="display-4">A slide.</h1>
+                                <p class="lead">This is a simple hero unit, a simple jumbotron-style component for
+                                    calling extra attention to featured content or information.</p>
+                                <hr class="my-4">
+                                <p>It uses utility classes for typography and spacing to space content out within the
+                                    larger container.</p>
+                            </div>
+                            <!-- <img class="d-block w-100"
+                                    src="https://images.unsplash.com/photo-1494607239400-ff147da48308?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2241&q=80"
+                                    alt="Second slide">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Image Title</h5>
+                                    <p>Description</p>
+                                </div> -->
+                        </div>
+                        <div class="carousel-item">
+                            <div class="jumbotron bg-white jright">
+                                <h1 class="display-4">Another slide.</h1>
+                                <p class="lead">This is a simple hero unit, a simple jumbotron-style component for
+                                    calling extra attention to featured content or information.</p>
+                                <hr class="my-4">
+                                <p>It uses utility classes for typography and spacing to space content out within the
+                                    larger container.</p>
+                            </div>
+                            <!-- <img class="d-block w-100"
+                                    src="https://images.unsplash.com/photo-1514439827219-9137a0b99245?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
+                                    alt="Third slide">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Image Title</h5>
+                                    <p>Description</p>
+                                </div> -->
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ================ END----- FLUID CONTAINER ENCAPSULATING JUMBOTRON WITH ABOUT INFO ======================= -->
+
+
+    <div class="container" id="fotos">
+        <div class="row">
+            <div class="col-md">
+                <h1 class="display-4">featured</h1>
+            </div>
+
+        </div>
+
+        <!-- ROW CONTAINING THREE IMAGE COLUMNS -->
+        <div class="row">
+
+            <!-- -FIRST IMAGE COLUMN- -->
+            <div class="col-md-3 myproperties">
+                <ul class="grid cs-style-1">
+
+                    <div class="img">
+                        <li>
+                            <figure>
+                                <img class="img-thumbnail myfade"
+                                    src="https://images.unsplash.com/photo-1559659964-d80b891e9b6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=882&q=80" />
+                                <figcaption>
+                                    <h3>Sunset at Squaw Mountain</h3>
+                                    <span>Daniel Garcia</span>
+                                    <a href="https://www.instagram.com/dan.grcia/" target="_blank"><i
+                                            class="fab fa-instagram"></i></a>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </div>
+
+                    <div class="img">
+                        <li>
+                            <figure>
+                                <img class="img-thumbnail myfade"
+                                    src="https://images.unsplash.com/photo-1559638849-71cafc038a2e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1275&q=80" />
+                                <figcaption>
+                                    <h3>Sunset at Squaw Mountain</h3>
+                                    <span>Daniel Garcia</span>
+                                    <a href="https://www.instagram.com/dan.grcia/" target="_blank"><i
+                                            class="fab fa-instagram"></i></a>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </div>
+
+                    <div class="img">
+                        <li>
+                            <figure>
+                                <img class="img-thumbnail myfade"
+                                    src="https://images.unsplash.com/photo-1559662780-33af019fd570?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80" />
+                                <figcaption>
+                                    <h3>Sunset at Squaw Mountain</h3>
+                                    <span>Daniel Garcia</span>
+                                    <a href="https://www.instagram.com/dan.grcia/" target="_blank"><i
+                                            class="fab fa-instagram"></i></a>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </div>
+
+                    <div class="img">
+                        <li>
+                            <figure>
+                                <img class="img-thumbnail myfade"
+                                    src="https://images.unsplash.com/photo-1559655916-268f45e5a7a6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80" />
+                                <figcaption>
+                                    <h3>Sunset at Squaw Mountain</h3>
+                                    <span>Daniel Garcia</span>
+                                    <a href="https://www.instagram.com/dan.grcia/" target="_blank"><i
+                                            class="fab fa-instagram"></i></a>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </div>
+
+                </ul>
+
+            </div>
+
+
+            <!-- -SECOND/WIDEST IMAGE COLUMN- -->
+            <div class="col-md-5 myproperties">
+                <ul class="grid cs-style-1">
+
+                    <div class="img">
+                        <li>
+                            <figure>
+                                <img class="img-thumbnail myfade"
+                                    src="https://images.unsplash.com/photo-1559670207-cc47882ad446?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1276&q=80" />
+                                <figcaption>
+                                    <h3>Sunset at Squaw Mountain</h3>
+                                    <span>Daniel Garcia</span>
+                                    <a href="https://www.instagram.com/dan.grcia/" target="_blank"><i
+                                            class="fab fa-instagram"></i></a>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </div>
+
+                    <div class="img">
+                        <li>
+                            <figure>
+                                <img class="img-thumbnail myfade"
+                                    src="https://images.unsplash.com/photo-1559638733-7a15dd7bd8e0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80" />
+                                <figcaption>
+                                    <h3>Sunset at Squaw Mountain</h3>
+                                    <span>Daniel Garcia</span>
+                                    <a href="https://www.instagram.com/dan.grcia/" target="_blank"><i
+                                            class="fab fa-instagram"></i></a>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </div>
+
+                    <div class="img">
+                        <li>
+                            <figure>
+                                <img class="img-thumbnail myfade"
+                                    src="https://images.unsplash.com/photo-1559145430-ffb33b1de41e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80" />
+                                <figcaption>
+                                    <h3>Sunset at Squaw Mountain</h3>
+                                    <span>Daniel Garcia</span>
+                                    <a href="https://www.instagram.com/dan.grcia/" target="_blank"><i
+                                            class="fab fa-instagram"></i></a>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </div>
+
+                </ul>
+
+            </div>
+
+
+            <!-- -THIRD IMAGE COLUMN- -->
+            <div class="col-md myproperties">
+                <ul class="grid cs-style-1">
+
+                    <div class="img">
+                        <li>
+                            <figure>
+                                <img class="img-thumbnail myfade"
+                                    src="https://images.unsplash.com/photo-1559655916-268f45e5a7a6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80" />
+                                <figcaption>
+                                    <h3>Sunset at Squaw Mountain</h3>
+                                    <span>Daniel Garcia</span>
+                                    <a href="https://www.instagram.com/dan.grcia/" target="_blank"><i
+                                            class="fab fa-instagram"></i></a>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </div>
+
+                    <div class="img">
+                        <li>
+                            <figure>
+                                <img class="img-thumbnail myfade"
+                                    src="https://images.unsplash.com/photo-1559710831-a50fc66ae57e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80" />
+                                <figcaption>
+                                    <h3>Sunset at Squaw Mountain</h3>
+                                    <span>Daniel Garcia</span>
+                                    <a href="https://www.instagram.com/dan.grcia/" target="_blank"><i
+                                            class="fab fa-instagram"></i></a>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </div>
+
+                    <div class="img">
+                        <li>
+                            <figure>
+                                <img class="img-thumbnail myfade"
+                                    src="https://images.unsplash.com/photo-1559642171-b95f70b3f9ed?ixlib=rb-1.2.1&auto=format&fit=crop&w=1301&q=80" />
+                                <figcaption>
+                                    <h3>Sunset at Squaw Mountain</h3>
+                                    <span>Daniel Garcia</span>
+                                    <a href="https://www.instagram.com/dan.grcia/" target="_blank"><i
+                                            class="fab fa-instagram"></i></a>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </div>
+
+                    <div class="img">
+                        <li>
+                            <figure>
+                                <img class="img-thumbnail myfade"
+                                    src="https://images.unsplash.com/photo-1559782035-2646076bc1f8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80" />
+                                <figcaption>
+                                    <h3>Sunset at Squaw Mountain</h3>
+                                    <span>Daniel Garcia</span>
+                                    <a href="https://www.instagram.com/dan.grcia/" target="_blank"><i
+                                            class="fab fa-instagram"></i></a>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </div>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- **************************** POPULATED BY DYNAMIC GRID OF IMAGES CREATED IN 'apps>js' FILE ****************** -->
+    <div class="container">
+        <div class="row" id="dynamicImages">
+
+        </div>
+    </div>
+    <!-- ************************************************************************************************************  -->
+
+
+
+    <!-- ============================== FOOTER ============================ -->
+
+    <div class="container-fluid bg-light text-center footer scroll" id="bottom">
+        <div class="row">
+            <div class="col-md">
+                <h4>&#169;Daniel Garcia</h4>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- build:js js/main.js -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- endbuild -->
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

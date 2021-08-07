@@ -157,9 +157,9 @@ html {
 .cs-style-1 figcaption a {
     margin-top: 30px;
 }
+/* ================================================================================================== */
 
-/* ====================================== CSS HOVER EFFECTS END =================================== */
-
+/* ======================================== CAROUSEL ICONS ========================================== */
 .carousel-control-next-icon:after {
     content: ">"; /* add a character to press for next slide*/
     font-size: 40px;
@@ -183,9 +183,9 @@ html {
 .myfade:hover {
     opacity: 0.5;
 }
+/* ================================================================================================== */
 
 /* *********************** NAVBAR DROPDOWN MENU STYLING ********************************************** */
-
 .dropdown-item {
     color: white;
 }
@@ -194,8 +194,9 @@ html {
     background-color: black;
 }
 
-.dropdown-item, .dropdown-item-icon {
-    padding: .5rem 1.5rem !important;
+.dropdown-item,
+.dropdown-item-icon {
+    padding: 0.5rem 1.5rem !important;
 }
 
 .dropdown-item-icon {
@@ -211,6 +212,13 @@ html {
     background-color: transparent;
     border: 0;
 }
+/* ************************************************************************************************* */
+
+/* ***************************** NAV BAR STYLING ********************************* */
+#profile-nav {
+    border-radius: 50% !important;
+}
+/* ==================================================================================== */
 
 @media screen and (max-width: 31.5em) {
     .grid {
